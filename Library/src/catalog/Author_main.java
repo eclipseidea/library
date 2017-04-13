@@ -22,6 +22,10 @@ public class Author_main {
 		System.out.println("input 3 for remove book from autor");
 		System.out.println("input 4 for remove autor");
 		System.out.println("input 5 for remove all books from author");
+		System.out.println("input 6 for sort by year of publishing");
+		System.out.println("input 7 for sort by numbers of page");
+		System.out.println("input 8 for show all libray");
+		System.out.println("input 9 for exit");
 		System.out.println();
 		String menu = Author_main.scanner.nextLine();
 
@@ -42,7 +46,16 @@ public class Author_main {
 			library.delettAllBooksFromAuthor();
 			break;
 		case "6":
-		
+			library.SortByYearOfPublishing();
+			break;
+		case "7":
+			library.sortByNumberOfPage();
+			break;
+		case "8":
+			library.showAllLibrary();
+			break;
+		case "9":
+			System.exit(8);
 			break;
 		}
 		
